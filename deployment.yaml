@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nautilus-demo-website
+  labels:
+    name: nautilus-demo-website
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: nautilus-demo-website
+  template:
+    metadata:
+      labels:
+        name: nautilus-demo-website
+    spec:
+      containers:
+        - name: nautilus-demo-website
+          image: xata/nautilus-demo-website
+          imagePullPolicy: Never
+          ports:
+            - name: http
+              containerPort: 8080
+              protocol: TCP
