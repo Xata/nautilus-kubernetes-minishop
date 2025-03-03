@@ -3,8 +3,8 @@
 We appreciate all contributions to this project, whether they are bug fixes, documentation improvements, or feature additions. This repository is maintained by students at the MSU Denver Cybersecurity Center, but contributions from anyone are welcome!
 
 ![GitHub watchers](https://img.shields.io/github/watchers/Xata/nautilus-demo-website?style=for-the-badge)
-![GitHub contributors](https://img.shields.io/github/contributors/Xata/nautilus-demo-website%20?style=for-the-badge)
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xata/nautilus-demo-website%20?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Xata/nautilus-demo-website?style=for-the-badge)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xata/nautilus-demo-website?style=for-the-badge)
 
 ## How to contribute
 If you're interested in contributing, follow these steps:
