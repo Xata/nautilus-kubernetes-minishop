@@ -1,5 +1,11 @@
-# Use the official NGINX base image
-FROM nginx
+# Use the official Debian image: https://hub.docker.com/_/debian
+FROM debian
+
+# Run updates and install nginx
+RUN apt update -y && apt install nginx -y
+
+# Copy the nginx.conf from the repository into the default sites folder
+COPY nginx.conf /etc/nginx/sites-available/default
 
 # Set the working directory inside the container
 WORKDIR /usr/share/nginx/html
@@ -10,8 +16,8 @@ RUN rm -rf ./*
 # Copy website files from your local machine to the container
 COPY ./website /usr/share/nginx/html
 
-# Expose port 80 for web traffic
-EXPOSE 8080
+# Expose port 8080 for web traffic
+EXPOSE 8080/tcp
 
-# Start NGINX
-CMD ["nginx", "-g", "daemon off;"]
+# Start the Nginx server
+CMD ["/usr/sbin/nginx", "-g", "daemon off;"]
