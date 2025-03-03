@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: nautilus-demo-website
+  labels:
+    name: nautilus-demo-website
+spec:
+  ports:
+    - name: http
+      port: 80
+      protocol: TCP
+      targetPort: 8080
+  type: NodePort
+  selector:
+    name: nautilus-demo-website
