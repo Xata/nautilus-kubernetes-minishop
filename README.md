@@ -43,33 +43,33 @@ During the Kubernetes MiniShop, you will have to execute these steps:
    ```
 
 2. Check to see if the image was imported to the local registry:
-```zsh
-sudo crictl images
-```
+   ```zsh
+   sudo crictl images
+   ```
 
 3. Apply the service and deployment files:
-```zsh
-kubectl apply -f deployment.yaml
-kubectl apply -f service.yaml
-```
+   ```zsh
+   kubectl apply -f deployment.yaml
+   kubectl apply -f service.yaml
+   ```
 
 4. Check to see what port was assigned to the pod:
-```
-kubectl get svc
-```
+   ```
+   kubectl get svc
+   ```
 
 It should look something like this:
-```zsh
-NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
-kubernetes              ClusterIP   10.43.0.1      <none>        443/TCP        28m
-nautilus-demo-website   NodePort    10.43.11.101   <none>        80:31977/TCP   11m
-```
+   ```zsh
+   NAME                    TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)        AGE
+   kubernetes              ClusterIP   10.43.0.1      <none>        443/TCP        28m
+   nautilus-demo-website   NodePort    10.43.11.101   <none>        80:31977/TCP   11m
+   ```
 
 5. Now you can access the webpage at the assigned port:
-```zsh
-http://192.168.1.234:31977
-```
-Note: The port and IP will change based on your network!
+   ```zsh
+   http://192.168.1.234:31977
+   ```
+   Note: The port and IP will change based on your network!
 
 
 ## Technologies Used
