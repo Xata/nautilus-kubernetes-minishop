@@ -1,15 +1,14 @@
 # nautilus-demo-website
-Hello and welcome to the nautilus-demo-website repository! The goal of this project is to provide a simple (and I mean SIMPLE) website for students to check to see if their infrastructure is working.
-This is a simple static webpage that displays an image of a nautilus. 
+Nautilus Demo Website: This is a simple static website designed to help students verify their Kubernetes and Docker infrastructure setup. When deployed, the site displays an image of a nautilus to indicate that everything is working correctly.
 
 ![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xata/nautilus-demo-website?style=for-the-badge)
 ![GitHub top language](https://img.shields.io/github/languages/top/Xata/nautilus-demo-website?style=for-the-badge)
 ![GitHub repo size](https://img.shields.io/github/repo-size/Xata/nautilus-demo-website?style=for-the-badge)
 
 ## About this project
-
-This is a simple static webpage that displays a nautilus upon visiting the site. This is used to check to make sure if your infrastructure has been setup and is working correctly.
-It also contains the steps taken during the Kubernetes MiniShop #1 at MSU Denver.
+- This website serves as a simple deployment test for Kubernetes and Docker environments.
+- If you can see the nautilus image, your infrastructure is working.
+- This project was created for the Kubernetes MiniShop #1 at MSU Denver to teach students how to deploy containerized applications.
 
 ## Kubernetes MiniShop #1 Steps
 Below are the instructions for the kubernetes MiniShop.
@@ -172,7 +171,7 @@ It should look something like this:
    nautilus-demo-website   NodePort    10.43.11.101   <none>        80:31977/TCP   11m
    ```
 
-Note: You may have to allow the port in UFW first:
+⚠️ **Important:** Allow the port in UFW first:
    ```zsh
    sudo ufw allow 31977/tcp
    sudo ufw reload
