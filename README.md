@@ -2,7 +2,9 @@
 Hello and welcome to the nautilus-demo-website repository! The goal of this project is to provide a simple (and I mean SIMPLE) website for students to check to see if their infrastructure is working.
 This is a simple static webpage that displays an image of a nautilus. 
 
-![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xata/nautilus-demo-website?style=flat)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/t/Xata/nautilus-demo-website?style=flat-square)
+![GitHub top language](https://img.shields.io/github/languages/top/Xata/nautilus-demo-website%20?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/Xata/nautilus-demo-website%20?style=for-the-badge)
 
 ## About this project
 
