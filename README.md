@@ -49,8 +49,8 @@ sudo crictl images
 
 3. Apply the service and deployment files:
 ```zsh
-kubectl apply -f nautilus-website-deployment.yaml
-kubectl apply -f nautilus-website-service.yaml
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
 ```
 
 4. Check to see what port was assigned to the pod:
